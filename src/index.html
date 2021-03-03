@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>webpack</title>
+	<link href="images/favicon.ico" type="image/x-icon" rel="icon">
+</head>
+
+<body>
+	<div class="columns">
+		<div class="column is-half is-offset-one-quarter">
+			<h1 class="my-5 title">First Form Practice</h1>
+			<form class="field has-text-centered" name="myForm" >
+				<!-- Name -->
+				<div class="my-2 control has-icons-left has-icons-right">
+					<label class="none" for="Name">Name</label>
+					<input id="Name" class="input is-rounded" type="text" name="Name">
+					<span class="icon is-left"><i class="fa fa-user"></i></span>
+				</div>
+				<!-- EMail -->
+				<div class="my-2 control has-icons-left has-icons-right">
+					<label class="none" for="EMail">EMail</label>
+					<input id="EMail" class="is-rounded input" type = "text" name = "EMail" />
+					<span class="icon is-left"><i class="fa fa-envelope"></i></span>
+				</div>
+				<!-- National ID -->
+				<p>National Id must be 5 char!</p>
+				<div class="my-2 control has-icons-left has-icons-right">
+					<label class="none" for="nationalId">national Id</label>
+					<input id="nationalId" class="is-rounded input" type="text" name="nationalId">
+					<span class="icon is-left" value="National Id"><i class="fa fa-id-card-o"></i></span>
+				</div>
+				<label for="pass">Password (6 char):</label>
+				<div class="my-2 control has-icons-left has-icons-right">
+					<label class="none" for="pass">Password (6 char):</label>
+					<input class="is-rounded input" type="password" id="pass" name="password" minlength="6" required>
+					<span class="icon is-left" value="National Id"><i class="fa fa-key"></i></span>
+				</div>
+				<input class="button is-primary" type="submit" value="Submit" onclick="validate()">
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
